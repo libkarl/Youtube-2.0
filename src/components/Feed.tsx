@@ -13,7 +13,6 @@ const Feed = () => {
       setVideos(data.items);
     });
   }, [selectedCategory]);
-
   return (
     <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
       <Box
@@ -30,12 +29,12 @@ const Feed = () => {
         <Typography
           className="copyright"
           variant="body2"
-          sx={{ mt: 1.5, mb: 1.5, color: "#fff" }}
+          sx={{ mt: 10, color: "#fff" }}
         >
           Copyright 2022 JSM Media
         </Typography>
       </Box>
-      <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
+      <Box p={2} sx={{ overflowY: "auto", height: "100vh", flex: 2 }}>
         <Typography
           variant="h4"
           fontWeight="bold"
